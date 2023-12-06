@@ -23,7 +23,6 @@ li {
 }
 
 .container {
-	max-width: 1124px;
 	display: flex;
-	flex-direction: row-reverse;
+	max-width: 1124px;
 }

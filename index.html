@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="rtl" lang="fa-IR">
 
 <head>
     <meta charset="UTF-8">
@@ -11,39 +11,35 @@
 
 <body>
     <div class="container">
-        <section class="todo-section">
-            <div class="top">
-                <div class="icon"><img src="./assets/images/todo/bxs_hide.svg" alt="hide-icon"></div>
-                <span class="todo-title">دست نویس</span>
-            </div>
-            <hr>
-            <ul class="tasks-list-container">
-                <li class="task-item">
-                    <div class="icons">
-                        <div><img src="./assets/images/todo/delete.svg" alt="delete-icon"></div>
-                        <div><img src="./assets/images/todo/edit.svg" alt="edit-icon"></div>
-                    </div>
-                    <span class="task-title">کار شماره اول من</span>
-                    <div class="done"></div>
-                </li>
-                <li class="task-item">
-                    <div class="icons">
-                        <div><img src="./assets/images/todo/delete.svg" alt="delete-icon"></div>
-                        <div><img src="./assets/images/todo/edit.svg" alt="edit-icon"></div>
-                    </div>
-                    <span class="task-title">کار شماره اول من</span>
-                    <div class="done"></div>
-                </li>
-            </ul>
-            <div class="new-task">
-                <hr>
-            </div>
-        </section>
+        <section class="time-weather-section"></section>
         <section class="search-fav-section">
             <section class="search-section"></section>
             <section class="fav-section"></section>
         </section>
-        <section class="time-weather-section"></section>
+        <section class="todo-section">
+            <div class="top">
+                <span class="todo-title">دست نویس</span>
+                <div class="icon"><img src="./assets/images/todo/bxs_hide.svg" alt="hide-icon"></div>
+            </div>
+            <hr>
+            <ul class="tasks-list-container">
+                <li class="task-item">
+                    <div class="done"></div>
+                    <span class="task-title">کار شماره اول من</span>
+                    <div class="icons">
+                        <div><img src="./assets/images/todo/delete.svg" alt="delete-icon"></div>
+                        <div><img src="./assets/images/todo/edit.svg" alt="edit-icon"></div>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+            <div class="new-task">
+                <form action="submit" class="new-task-form">
+                    <input type="text" id="input" placeholder="نوشتن تسک جدید">
+                    <button><img src="./assets/images/todo/plus.svg" alt=""></button>
+                </form>
+            </div>
+        </section>
     </div>
 
     <script src="./assets/scripts/main.js"></script>

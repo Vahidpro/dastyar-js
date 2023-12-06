@@ -1,18 +1,27 @@
 @import "./style.css";
 
 .todo-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
 	background-color: var(--primary-color);
 	width: 273px;
 	height: 634px;
-	border-radius: 24px;
+	border-radius: 16px;
 	margin: 1rem;
+	border-radius: 10px;
+}
+
+.todo-section > div,
+.todo-section > ul {
+	padding: 1rem 0.5rem;
 }
 
 .todo-section .top {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 16px;
 }
 .todo-section .top .todo-title {
 	color: var(--secondary-color);
@@ -41,7 +50,7 @@ hr {
 .todo-section .tasks-list-container {
 	display: flex;
 	flex-direction: column;
-	padding: 16px 4px;
+	flex: 1;
 }
 
 .task-item {
@@ -49,6 +58,9 @@ hr {
 	align-items: center;
 	justify-content: space-between;
 	gap: 4px;
+	border-radius: 10px;
+	border: 0.5px solid #babdc6;
+	padding: 4px;
 }
 .task-item .icons {
 	display: flex;
@@ -59,6 +71,11 @@ hr {
 }
 .task-item .icons div {
 	cursor: pointer;
+}
+.task-item .icons div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .task-item .done {
@@ -75,4 +92,54 @@ hr {
 	font-size: 1rem;
 	font-weight: bold;
 	margin-left: auto;
+}
+
+.new-task {
+	width: 252px;
+}
+
+.new-task-form {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 6px;
+	border: 2px solid #babdc6;
+	padding: 4px;
+	height: 40px;
+}
+
+.new-task-form button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.new-task-form button img {
+	width: 20px;
+	height: 20px;
+}
+
+.new-task-form input {
+	background: none;
+	border: none;
+	width: 100%;
+}
+
+.new-task-form input:focus {
+	outline: none;
+}
+
+.new-task-form input::placeholder {
+	color: #94a3b8;
+	text-align: right;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 700;
+}
+
+.new-task {
+	width: auto;
 }
