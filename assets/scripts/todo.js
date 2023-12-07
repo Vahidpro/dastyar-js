@@ -47,3 +47,15 @@ const createTask = (task) => {
     `;
 	tasksListContainer.prepend(li);
 };
+
+function init() {
+	const storedTasks = JSON.parse(localStorage.getItem("tasks"));
+	console.log(storedTasks);
+	if (storedTasks) {
+		tasks = storedTasks;
+		tasks.forEach((task) => {
+			createTask(task.title);
+		});
+	}
+}
+init();
