@@ -80,15 +80,14 @@ hr {
 .task-item .done {
 	width: 20px;
 	height: 20px;
-	flex-shrink: 0;
 	border-radius: 6px;
 	border: 1px solid #73ce8a;
 	background: #cef0d9;
 }
 
 .task-title {
-	color: var(--secondary-color);
-	font-size: 1rem;
+	color: #2b2b63;
+	font-size: 0.8rem;
 	font-weight: bold;
 	margin-left: auto;
 	max-width: 50%;
