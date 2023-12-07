@@ -1,9 +1,10 @@
 @import "./style.css";
 
+/* Search Section */
 .search-fav-section {
 	display: grid;
 	grid-auto-flow: row;
-	grid-template-rows: 1fr 3fr 4fr;
+	grid-template-rows: 1fr 7fr;
 }
 
 .search-section {
@@ -22,7 +23,6 @@
 	width: 90%;
 	border-radius: 6rem;
 	height: 50%;
-	/* gap: 0.5rem; */
 	padding: 0 0.3rem;
 }
 
@@ -38,6 +38,7 @@
 	color: #b2b2b2;
 	font-size: 0.75rem;
 	font-weight: 500;
+	height: 100%;
 }
 
 .search-section button {
@@ -54,4 +55,32 @@
 .search-section button img {
 	width: 1rem;
 	height: 1rem;
+}
+
+/* Fav Section */
+
+.fav-list-container {
+	margin: 0.5rem 0;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 0.5em;
+}
+.fav-list-container li {
+	background-color: var(--primary-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1rem;
+	height: 4.5rem;
+}
+.fav-list-container li div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.fav-list-container li div img {
+	width: 1.5rem;
+	height: 1.5rem;
+	cursor: pointer;
 }
