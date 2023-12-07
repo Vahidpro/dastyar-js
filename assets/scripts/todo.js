@@ -3,7 +3,9 @@ addButton = document.querySelector(".btn-add");
 tasksListContainer = document.querySelector(".tasks-list-container");
 
 let tasks = [];
-let tasksId = 0;
+let tasksId = localStorage.getItem("tasksId")
+	? parseInt(localStorage.getItem("tasksId"))
+	: 0;
 
 // New task input validation
 taskInput.addEventListener("input", (e) => {
@@ -20,14 +22,17 @@ addButton.addEventListener("click", (e) => {
 	if (taskInput.value.trim() == "") {
 		return;
 	}
+	id = tasksId++;
 	addTask({
 		title: taskInput.value,
 		done: false,
+		id: id,
 	});
 
-	createTask(taskInput.value);
+	createTask(taskInput.value, id);
 
 	localStorage.setItem("tasks", JSON.stringify(tasks));
+	localStorage.setItem("tasksId", tasksId);
 
 	taskInput.value = "";
 });
@@ -38,13 +43,13 @@ function addTask(task) {
 const createTask = (task, id) => {
 	const li = document.createElement("li");
 	li.classList.add("task-item");
-	li.id = tasksId++;
+	li.id = id;
 	li.innerHTML = `
         <div class="done"></div>
         <span class="task-title">${task}</span>
         <div class="icons">
-            <div><img src="./assets/images/todo/edit.svg" alt="edit-icon"></div>
-            <div><img src="./assets/images/todo/delete.svg" alt="delete-icon"></div>
+            <div ><img class="btn-edit" src="./assets/images/todo/edit.svg" alt="edit-icon"></div>
+            <div ><img class="btn-delete" src="./assets/images/todo/delete.svg" alt="delete-icon"></div>
         </div>
     `;
 	tasksListContainer.prepend(li);
@@ -52,12 +57,24 @@ const createTask = (task, id) => {
 
 function init() {
 	const storedTasks = JSON.parse(localStorage.getItem("tasks"));
-	console.log(storedTasks);
 	if (storedTasks) {
 		tasks = storedTasks;
 		tasks.forEach((task) => {
-			createTask(task.title);
+			createTask(task.title, task.id);
 		});
 	}
 }
 init();
+
+function deleteTask(id) {
+	tasks = tasks.filter((task) => task.id != Number(id));
+	localStorage.setItem("tasks", JSON.stringify(tasks));
+}
+
+tasksListContainer.addEventListener("click", (e) => {
+	const id = e.target.parentElement.parentElement.parentElement.id;
+	if (e.target.classList.contains("btn-delete")) {
+		deleteTask(id);
+		e.target.parentElement.parentElement.parentElement.remove();
+	}
+});
