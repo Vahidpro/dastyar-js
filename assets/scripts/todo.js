@@ -25,6 +25,7 @@ addButton.addEventListener("click", (e) => {
 	});
 
 	createTask(taskInput.value);
+
 	taskInput.value = "";
 });
 function addTask(task) {
@@ -43,10 +44,7 @@ const createTask = (task) => {
         </div>
     `;
 
-	console.log(li);
+	console.log(li.outerHTML);
 
-	console.log(tasksListContainer.innerHTML);
-	console.log(li.innerHTML);
-
-	tasksListContainer.innerHTML += li.outerHTML;
+	tasksListContainer.prepend(li);
 };
