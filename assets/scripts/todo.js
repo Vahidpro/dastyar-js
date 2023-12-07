@@ -26,6 +26,8 @@ addButton.addEventListener("click", (e) => {
 
 	createTask(taskInput.value);
 
+	localStorage.setItem("tasks", JSON.stringify(tasks));
+
 	taskInput.value = "";
 });
 function addTask(task) {
@@ -43,8 +45,5 @@ const createTask = (task) => {
             <div><img src="./assets/images/todo/edit.svg" alt="edit-icon"></div>
         </div>
     `;
-
-	console.log(li.outerHTML);
-
 	tasksListContainer.prepend(li);
 };
