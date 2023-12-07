@@ -37,7 +37,7 @@ li {
 .search-fav-section {
 	background-color: var(--primary-color);
 	height: 39.625rem;
-	border-radius: 0.5rem;
+	border-radius: 1rem;
 	gap: 1rem;
 }
 
