@@ -43,8 +43,8 @@ const createTask = (task, id) => {
         <div class="done"></div>
         <span class="task-title">${task}</span>
         <div class="icons">
-            <div><img src="./assets/images/todo/delete.svg" alt="delete-icon"></div>
             <div><img src="./assets/images/todo/edit.svg" alt="edit-icon"></div>
+            <div><img src="./assets/images/todo/delete.svg" alt="delete-icon"></div>
         </div>
     `;
 	tasksListContainer.prepend(li);
