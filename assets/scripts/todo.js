@@ -3,6 +3,7 @@ addButton = document.querySelector(".btn-add");
 tasksListContainer = document.querySelector(".tasks-list-container");
 
 let tasks = [];
+let tasksId = 0;
 
 // New task input validation
 taskInput.addEventListener("input", (e) => {
@@ -34,9 +35,10 @@ function addTask(task) {
 	tasks.push(task);
 }
 
-const createTask = (task) => {
+const createTask = (task, id) => {
 	const li = document.createElement("li");
 	li.classList.add("task-item");
+	li.id = tasksId++;
 	li.innerHTML = `
         <div class="done"></div>
         <span class="task-title">${task}</span>
