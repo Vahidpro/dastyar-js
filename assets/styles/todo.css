@@ -63,12 +63,17 @@ hr {
 	padding: 4px;
 	margin-bottom: 8px;
 }
+.task-item:hover .icons {
+	opacity: 1;
+}
 .task-item .icons {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 16px;
 	margin: 4px;
+	opacity: 0;
+	transition: all 0.3s ease;
 }
 .task-item .icons div {
 	cursor: pointer;
