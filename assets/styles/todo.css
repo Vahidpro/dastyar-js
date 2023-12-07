@@ -61,6 +61,7 @@ hr {
 	border-radius: 10px;
 	border: 0.5px solid #babdc6;
 	padding: 4px;
+	margin-bottom: 8px;
 }
 .task-item .icons {
 	display: flex;
@@ -92,6 +93,7 @@ hr {
 	font-size: 1rem;
 	font-weight: bold;
 	margin-left: auto;
+	max-width: 50%;
 }
 
 .new-task {
