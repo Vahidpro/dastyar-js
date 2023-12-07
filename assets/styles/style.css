@@ -23,6 +23,24 @@ li {
 }
 
 .container {
-	display: flex;
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 1fr 2fr 1fr;
+	gap: 1rem;
 	max-width: 1124px;
+	margin: 1rem auto;
+	padding: 1rem;
+}
+
+.todo-section,
+.time-weather-section,
+.search-fav-section {
+	background-color: var(--primary-color);
+	height: 39.625rem;
+	border-radius: 0.5rem;
+	gap: 1rem;
+}
+
+.search-fav-section {
+	background-color: transparent;
 }
