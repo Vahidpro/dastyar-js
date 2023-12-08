@@ -32,13 +32,8 @@ li {
 }
 
 .todo-section,
-.time-weather-section,
+.left-section,
 .search-fav-section {
-	background-color: var(--primary-color);
 	height: 39.625rem;
 	border-radius: 1rem;
-}
-
-.search-fav-section {
-	background-color: transparent;
 }
