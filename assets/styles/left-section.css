@@ -41,11 +41,24 @@
 .islamic-calendar,
 .gregorian-calendar {
 	color: #858f97;
-	font-size: 0.7rem;
+	font-size: 0.6rem;
 	padding: 0.3rem;
 	text-align: center;
 }
 
 .islamic-calendar {
 	width: 50%;
+}
+
+.options {
+	display: flex;
+}
+
+.options > select {
+	border-radius: 16px;
+	border: 0.5px solid var(--grey-border);
+	height: 1.5rem;
+	margin: 0.3rem;
+	font-size: 0.7rem;
+	color: #637db3;
 }
