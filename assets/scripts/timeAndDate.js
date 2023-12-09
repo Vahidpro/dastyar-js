@@ -8,7 +8,7 @@ const today = new Date();
 function setTime() {
 	let hours = today.getHours().toLocaleString("fa-IR");
 	let minutes = today.getMinutes().toLocaleString("fa-IR", {
-		minutes: "2-digit",
+		minimumIntegerDigits: 2,
 	});
 
 	timeContainer.innerHTML = `${hours}:${minutes}`;
@@ -63,5 +63,3 @@ const islamicDate = () => {
 
 islamicDate();
 setInterval(islamicDate, 1000);
-
-// Test area
