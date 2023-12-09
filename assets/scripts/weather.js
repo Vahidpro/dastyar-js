@@ -1,5 +1,7 @@
 currentWeatherContainer = document.querySelector(".temp-value");
 currentWeatherIconContainer = document.querySelector(".weather-icon");
+weatherDescriptionContainer = document.querySelector(".description-title");
+weatherDescriptionEmojiContainer = document.querySelector(".description-emoji");
 
 const fetchWeather = async () => {
 	const res = await fetch(
@@ -13,5 +15,9 @@ const fetchWeather = async () => {
 		.slice(0, 2)}°`;
 
 	currentWeatherIconContainer.innerHTML = `<img src="https://openweathermap.org/img/wn/${data[0].weather.icon}@2x.png"/>`;
+
+	weatherDescriptionContainer.innerHTML = data[0].customDescription.text;
+
+	weatherDescriptionEmojiContainer.innerHTML = data[0].customDescription.emoji;
 };
 fetchWeather();
