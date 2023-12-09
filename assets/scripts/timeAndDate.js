@@ -53,8 +53,8 @@ const islamicDate = () => {
 	const month = today.toLocaleString("ar-SA", { month: "short" });
 	const year = today
 		.toLocaleString("ar-SA", {
-			year: "numeric",
 			calendar: "islamic-umalqura",
+			year: "numeric",
 		})
 		.slice(0, 4);
 

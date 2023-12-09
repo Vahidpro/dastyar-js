@@ -37,3 +37,30 @@ li {
 	height: 39.625rem;
 	border-radius: 1rem;
 }
+
+@media screen and (max-width: 1160px) {
+	.container {
+		margin: 1rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		grid-auto-flow: row;
+		grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.container {
+		grid-auto-flow: row;
+		grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (max-width: 340px) {
+	.container {
+		grid-auto-flow: row;
+		grid-template-columns: 1fr;
+	}
+}

@@ -93,11 +93,19 @@
 	height: 2.2rem;
 }
 .fav-list-container .fav-title {
-	font-size: 0.8em;
-	color: #21234d;
+	font-size: 1em;
+	color: #4c51a7;
 }
 
 .first-item .fav-title {
-	font-size: 1rem;
 	font-weight: 800;
+}
+
+@media screen and (max-width: 1160px) {
+	.fav-list-container .fav-title {
+		font-size: 0.8rem;
+	}
+	/* .first-item .fav-title {
+		font-size: 0.8rem;
+	} */
 }
