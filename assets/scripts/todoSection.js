@@ -3,6 +3,7 @@ addButton = document.querySelector(".btn-add");
 tasksListContainer = document.querySelector(".tasks-list-container");
 
 let tasks = [];
+const maxTitleLength = 20;
 let tasksId = localStorage.getItem("tasksId")
 	? parseInt(localStorage.getItem("tasksId"))
 	: 0;
@@ -40,13 +41,17 @@ function addTask(task) {
 	tasks.push(task);
 }
 
-const createTask = (task, id) => {
+const createTask = (taskTitle, id) => {
+	let title = taskTitle;
+	if (title.length > maxTitleLength) {
+		title = title.substring(0, maxTitleLength) + "...";
+	}
 	const li = document.createElement("li");
 	li.classList.add("task-item");
 	li.id = id;
 	li.innerHTML = `
         <div class="done"></div>
-        <span class="task-title">${task}</span>
+        <span class="task-title">${title}</span>
         <div class="icons">
             <div ><img class="btn-edit" src="./assets/images/todo/edit.svg" alt="edit-icon"></div>
             <div ><img class="btn-delete" src="./assets/images/todo/delete.svg" alt="delete-icon"></div>
