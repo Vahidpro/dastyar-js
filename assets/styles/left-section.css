@@ -37,6 +37,9 @@
 	align-items: flex-start;
 	justify-content: space-between;
 }
+.calendars .spacer {
+	color: #cccccc;
+}
 
 .islamic-date,
 .gregorian-date {
@@ -45,6 +48,7 @@
 	padding: 0.3rem;
 	text-align: center;
 	direction: ltr;
+	font-weight: bold;
 }
 
 .islamic-date {
