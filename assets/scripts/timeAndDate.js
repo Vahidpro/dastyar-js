@@ -1,6 +1,7 @@
 timeContainer = document.querySelector(".time");
 persianDateContainer = document.querySelector(".persian-date");
 gregorianDateContainer = document.querySelector(".gregorian-date");
+islamicDateContainer = document.querySelector(".islamic-date");
 
 const today = new Date();
 
@@ -39,11 +40,28 @@ const gregorianDate = () => {
 		useGrouping: false,
 	});
 
-	console.log(year);
-
 	gregorianDateContainer.innerHTML = `${year}/${month}/${day}`;
 };
 
 gregorianDate();
 setInterval(gregorianDate, 1000);
+
+const islamicDate = () => {
+	const day = today.toLocaleString("ar-SA", {
+		day: "numeric",
+	});
+	const month = today.toLocaleString("ar-SA", { month: "short" });
+	const year = today
+		.toLocaleString("ar-SA", {
+			year: "numeric",
+			calendar: "islamic-umalqura",
+		})
+		.slice(0, 4);
+
+	islamicDateContainer.innerHTML = `${year}/${month}/${day}`;
+};
+
+islamicDate();
+setInterval(islamicDate, 1000);
+
 // Test area
