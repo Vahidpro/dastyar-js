@@ -2,6 +2,8 @@ currentWeatherContainer = document.querySelector(".temp-value");
 currentWeatherIconContainer = document.querySelector(".weather-icon");
 weatherDescriptionContainer = document.querySelector(".description-title");
 weatherDescriptionEmojiContainer = document.querySelector(".description-emoji");
+maxTempContainer = document.querySelector(".max-temp-value");
+minTempContainer = document.querySelector(".min-temp-value");
 
 const fetchWeather = async () => {
 	const res = await fetch(
@@ -19,5 +21,12 @@ const fetchWeather = async () => {
 	weatherDescriptionContainer.innerHTML = data[0].customDescription.text;
 
 	weatherDescriptionEmojiContainer.innerHTML = data[0].customDescription.emoji;
+
+	maxTempContainer.innerHTML = `${data[0].max
+		.toLocaleString("fa-IR")
+		.slice(0, 2)}°`;
+	minTempContainer.innerHTML = `${data[0].min
+		.toLocaleString("fa-IR")
+		.slice(0, 2)}°`;
 };
 fetchWeather();
