@@ -38,15 +38,16 @@
 	justify-content: space-between;
 }
 
-.islamic-calendar,
-.gregorian-calendar {
+.islamic-date,
+.gregorian-date {
 	color: #858f97;
 	font-size: 0.6rem;
 	padding: 0.3rem;
 	text-align: center;
+	direction: ltr;
 }
 
-.islamic-calendar {
+.islamic-date {
 	width: 50%;
 }
 
