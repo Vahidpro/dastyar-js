@@ -32,13 +32,13 @@ li {
 	margin: 1rem auto;
 	grid-template-areas:
 		" todo todo search search search search left left"
-		" todo todo fav fav fav fav left left"
-		" todo todo fav fav fav fav left left"
-		" todo todo fav fav fav fav left left"
-		" todo todo fav fav fav fav left left"
-		" todo todo fav fav fav fav left left"
-		" todo todo fav fav fav fav left left"
-		" todo todo fav fav fav fav left left";
+		" todo todo bm bm bm bm left left"
+		" todo todo bm bm bm bm left left"
+		" todo todo bm bm bm bm left left"
+		" todo todo bm bm bm bm left left"
+		" todo todo bm bm bm bm left left"
+		" todo todo bm bm bm bm left left"
+		" todo todo bm bm bm bm left left";
 }
 
 .todo-section {
@@ -51,8 +51,8 @@ li {
 	grid-area: search;
 }
 
-.search-fav-section {
-	grid-area: fav;
+.bookmarks-section {
+	grid-area: bm;
 }
 
 .left-section {
@@ -73,7 +73,7 @@ li {
 		grid-template-areas:
 			"search"
 			"left"
-			"fav"
+			"bm"
 			"todo";
 
 		height: 1px;

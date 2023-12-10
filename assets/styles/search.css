@@ -1,0 +1,57 @@
+@import "./style.css";
+
+.search-section {
+	background-color: var(--primary-color);
+	border-radius: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.search-section form {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: var(--grey-color);
+	width: 90%;
+	border-radius: 6rem;
+	height: 50%;
+	padding: 0 0.3rem;
+}
+
+.search-section input {
+	width: 80%;
+	border: none;
+	background-color: var(--grey-color);
+	outline: none;
+	height: 100%;
+}
+
+.search-section input::placeholder {
+	color: #b2b2b2;
+	font-size: 0.75rem;
+	font-weight: 500;
+	height: 100%;
+}
+
+.search-section button {
+	background-color: #3d518f;
+	border: none;
+	border-radius: 6rem;
+	margin: 0.1rem;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.3rem 0.8rem;
+}
+.search-section button img {
+	width: 1rem;
+	height: 1rem;
+}
+
+@media screen and (max-width: 880px) {
+	.search-section {
+		height: 4rem;
+	}
+}

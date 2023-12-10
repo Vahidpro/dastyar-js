@@ -135,10 +135,6 @@
 	height: 20px;
 }
 
-/* .options .forcast-title {
-	justify-content: center;
-} */
-
 @media screen and (max-width: 880px) {
 	.time-weather-section {
 		height: auto;

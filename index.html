@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dastyar</title>
+    <link rel="stylesheet" href="./assets/styles/boomark.css">
+    <link rel="stylesheet" href="./assets/styles/search.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/time-weather.css">
     <link rel="stylesheet" href="./assets/styles/todo.css">
-    <link rel="stylesheet" href="./assets/styles/middle-section.css">
-    <link rel="stylesheet" href="./assets/styles/left-section.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <body>
@@ -38,54 +38,52 @@
                         alt="search icon"></button>
             </form>
         </section>
-        <section class="search-fav-section">
-            <section class="fav-section">
-                <ul class="fav-list-container">
-                    <li id="1" class="first-item">
-                        <div><img src="./assets/images/bookmarks/icon-park-outline_application-menu.svg" alt="add icon"
-                                class="btn-add"></div>
-                        <span class="fav-title">دم دستی</span>
-                    </li>
-                    <li id="2">
-                        <div><img src="./assets/images/bookmarks/favicon 1.svg" alt="add icon" class="btn-add">
-                        </div>
-                        <span class="fav-title">شب</span>
-                    </li>
-                    <li id="3">
-                        <div><img src="./assets/images/bookmarks/digikala.svg" alt="add icon" class="btn-add"></div>
-                        <span class="fav-title">دیجی‌کالا</span>
-                    </li>
-                    <li id="4">
-                        <div><img src="./assets/images/bookmarks/virgool-svgrepo-com.svg" alt="add icon"
-                                class="btn-add"></div>
-                        <span class="fav-title">ویرگول</span>
-                    </li>
-                    <li id="5">
-                        <div><img src="./assets/images/todo/plus.svg" alt="add icon" class="btn-add"></div>
-                    </li>
-                    <li id="6">
-                        <div><img src="./assets/images/todo/plus.svg" alt="add icon" class="btn-add"></div>
-                    </li>
-                    <li id="7">
-                        <div><img src="./assets/images/todo/plus.svg" alt="add icon" class="btn-add"></div>
-                    </li>
-                    <li id="8">
-                        <div><img src="./assets/images/todo/plus.svg" alt="add icon" class="btn-add"></div>
-                    </li>
-                    <li id="9">
-                        <div><img src="./assets/images/todo/plus.svg" alt="add icon" class="btn-add"></div>
-                    </li>
-                    <li id="10">
-                        <div><img src="./assets/images/todo/plus.svg" alt="add icon" class="btn-add"></div>
-                    </li>
-                    <li id="11">
-                        <div><img src="./assets/images/todo/plus.svg" alt="add icon" class="btn-add"></div>
-                    </li>
-                    <li id="12">
-                        <div><img src="./assets/images/todo/plus.svg" alt="add icon" class="btn-add"></div>
-                    </li>
-                </ul>
-            </section>
+        <section class="bookmarks-section">
+            <ul class="bookmark-list-container">
+                <li id="1" class="first-item">
+                    <div><img src="./assets/images/bookmarks/icon-park-outline_application-menu.svg" alt="add icon"
+                            class="btn-add"></div>
+                    <span class="bookmark-title">دم دستی</span>
+                </li>
+                <li id="2">
+                    <div><img src="./assets/images/bookmarks/favicon 1.svg" alt="add icon" class="btn-add">
+                    </div>
+                    <span class="bookmark-title">شب</span>
+                </li>
+                <li id="3">
+                    <div><img src="./assets/images/bookmarks/digikala.svg" alt="add icon" class="btn-add"></div>
+                    <span class="bookmark-title">دیجی‌کالا</span>
+                </li>
+                <li id="4">
+                    <div><img src="./assets/images/bookmarks/virgool-svgrepo-com.svg" alt="add icon" class="btn-add">
+                    </div>
+                    <span class="bookmark-title">ویرگول</span>
+                </li>
+                <li id="5">
+                    <div><img src="./assets/images/todo/plus.svg" alt="add icon" class="btn-add"></div>
+                </li>
+                <li id="6">
+                    <div><img src="./assets/images/todo/plus.svg" alt="add icon" class="btn-add"></div>
+                </li>
+                <li id="7">
+                    <div><img src="./assets/images/todo/plus.svg" alt="add icon" class="btn-add"></div>
+                </li>
+                <li id="8">
+                    <div><img src="./assets/images/todo/plus.svg" alt="add icon" class="btn-add"></div>
+                </li>
+                <li id="9">
+                    <div><img src="./assets/images/todo/plus.svg" alt="add icon" class="btn-add"></div>
+                </li>
+                <li id="10">
+                    <div><img src="./assets/images/todo/plus.svg" alt="add icon" class="btn-add"></div>
+                </li>
+                <li id="11">
+                    <div><img src="./assets/images/todo/plus.svg" alt="add icon" class="btn-add"></div>
+                </li>
+                <li id="12">
+                    <div><img src="./assets/images/todo/plus.svg" alt="add icon" class="btn-add"></div>
+                </li>
+            </ul>
         </section>
         <section class="left-section">
             <section class="time-weather-section">
@@ -130,17 +128,15 @@
                             <option class="forcast-option" value="1">پیش‌بینی</option>
                         </select>
                     </div>
-
             </section>
             <section class="bottom"></section>
         </section>
-
     </div>
-    <script src="./assets/scripts/main.js"></script>
-    <script src="./assets/scripts/todoSection.js"></script>
-    <script src="./assets/scripts/middleSection.js"></script>
-    <script src="./assets/scripts/weather.js"></script>
+    <script src="./assets/scripts/bookmark.js"></script>
+    <script src="./assets/scripts/search.js"></script>
     <script src="./assets/scripts/timeAndDate.js"></script>
+    <script src="./assets/scripts/todo.js"></script>
+    <script src="./assets/scripts/weather.js"></script>
 </body>
 
 </html>
