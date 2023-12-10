@@ -1,8 +1,6 @@
 @import "./style.css";
 
 .search-section {
-	background-color: var(--primary-color);
-	border-radius: 1rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -24,14 +22,14 @@
 	border: none;
 	background-color: var(--grey-color);
 	outline: none;
-	height: 100%;
+	font-size: 1rem;
+	font-weight: 500;
 }
 
 .search-section input::placeholder {
 	color: #b2b2b2;
-	font-size: 0.75rem;
+	font-size: 1rem;
 	font-weight: 500;
-	height: 100%;
 }
 
 .search-section button {

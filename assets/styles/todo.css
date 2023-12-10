@@ -4,7 +4,6 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color: var(--primary-color);
 }
 
 .todo-section > div,
@@ -17,10 +16,10 @@
 	align-items: center;
 	justify-content: space-between;
 }
-.todo-section .top .todo-title {
+.todo-section .top .todo-header {
 	color: var(--secondary-color);
-	font-family: Vazirmatn;
-	font-size: 20px;
+	font-family: var(--main-font);
+	font-size: 1.5rem;
 	font-weight: bold;
 }
 .todo-section .top .icon {
@@ -88,10 +87,10 @@ hr {
 
 .task-title {
 	color: #2b2b63;
-	font-size: 0.8rem;
-	font-weight: bold;
+	font-size: 1rem;
+	font-weight: 500;
 	margin-left: auto;
-	max-width: 70%;
+	max-width: 50%;
 }
 
 .new-task {
@@ -126,6 +125,8 @@ hr {
 	background: none;
 	border: none;
 	width: 100%;
+	font-size: 1rem;
+	font-weight: 400;
 }
 
 .new-task-form input:focus {
@@ -135,7 +136,7 @@ hr {
 .new-task-form input::placeholder {
 	color: #94a3b8;
 	text-align: right;
-	font-size: 12px;
+	font-size: 1rem;
 	font-style: normal;
 	font-weight: 700;
 }

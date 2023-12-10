@@ -9,17 +9,27 @@
 	--secondary-color: #000000;
 	--grey-color: #f3f4f6;
 	--grey-border: #f0f1f4;
+	--main-font: "Vazirmatn", sans-serif;
+	--outer-border-radius: 24px;
+	--mid-border-radius: 1rem;
+	--inner-border-radius: 0.5rem;
 }
 
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: "Vazirmatn", sans-serif;
 }
 
-html {
+body {
 	background-color: #c4def7;
+	font-family: var(--main-font);
+}
+
+::placeholder,
+select,
+input {
+	font-family: var(--main-font);
 }
 
 li {
@@ -45,8 +55,16 @@ li {
 		" todo todo bm bm bm bm left left";
 }
 
+/* border-radius */
+.todo-section,
+.search-section,
+.left-section {
+	background-color: var(--primary-color);
+	border-radius: var(--outer-border-radius);
+}
+
 .todo-section {
-	height: 39.625rem;
+	height: 40rem;
 	border-radius: 1rem;
 	grid-area: todo;
 }
@@ -79,7 +97,6 @@ li {
 			"left"
 			"bm"
 			"todo";
-
 		height: 1px;
 	}
 }

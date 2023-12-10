@@ -1,8 +1,6 @@
 @import "./style.css";
 
 .time-weather-section {
-	background-color: var(--primary-color);
-	border-radius: 1rem;
 	display: flex;
 	height: 300px;
 }

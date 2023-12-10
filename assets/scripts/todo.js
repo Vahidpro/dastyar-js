@@ -3,7 +3,7 @@ addButton = document.querySelector(".btn-add");
 tasksListContainer = document.querySelector(".tasks-list-container");
 
 let tasks = [];
-const maxTitleLength = 20;
+const maxTitleLength = 16;
 let tasksId = localStorage.getItem("tasksId")
 	? parseInt(localStorage.getItem("tasksId"))
 	: 0;
