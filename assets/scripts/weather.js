@@ -11,7 +11,6 @@ const fetchWeather = async () => {
 			"https://api.dastyar.io/express/weather?lat=35.67194277&lng=51.42434403&lang=fa&theme=light"
 		);
 		const data = await res.json();
-		console.log(data);
 
 		currentWeatherContainer.innerHTML = `${Math.floor(
 			data[0].current

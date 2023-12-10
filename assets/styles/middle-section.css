@@ -106,3 +106,14 @@
 		font-size: 0.8rem;
 	}
 }
+
+@media screen and (max-width: 880px) {
+	.search-fav-section {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.search-section {
+		height: 4rem;
+	}
+}

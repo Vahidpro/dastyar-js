@@ -1,10 +1,10 @@
 @import "./style.css";
 
 .time-weather-section {
-	height: 45%;
 	background-color: var(--primary-color);
 	border-radius: 1rem;
 	display: flex;
+	height: 300px;
 }
 
 .time-section {
@@ -12,7 +12,6 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: var(--primary-color);
 	height: 50%;
 	border-radius: 0 1rem 0 0;
 	border-left: 1px solid var(--grey-border);
@@ -73,6 +72,7 @@
 .weather-section {
 	border-bottom: 1px solid var(--grey-border);
 	height: 50%;
+	width: 50%;
 }
 .weather-section .top {
 	display: flex;
@@ -89,9 +89,11 @@
 .max-min-temp {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
 	gap: 0.3rem;
 	color: #858f97;
-	margin: 0.2rem;
+	margin: 0.3rem;
 }
 .max-temp-value,
 .min-temp-value {
@@ -116,7 +118,7 @@
 
 .description-title {
 	color: var(--secondary-color);
-	font-size: 0.8rem;
+	font-size: 0.7rem;
 	font-weight: 800;
 }
 
@@ -136,3 +138,13 @@
 /* .options .forcast-title {
 	justify-content: center;
 } */
+
+@media screen and (max-width: 880px) {
+	.time-weather-section {
+		height: auto;
+	}
+
+	.time-section {
+		border-bottom: none;
+	}
+}
