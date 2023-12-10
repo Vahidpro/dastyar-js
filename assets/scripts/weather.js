@@ -7,15 +7,15 @@ minTempContainer = document.querySelector(".min-temp-value");
 
 const fetchWeather = async () => {
 	try {
-		// const res = await fetch(
-		// 	"https://api.dastyar.io/express/weather?lat=35.67194277&lng=51.42434403&lang=fa&theme=light"
-		// );
+		const res = await fetch(
+			"https://api.dastyar.io/express/weather?lat=35.67194277&lng=51.42434403&lang=fa&theme=light"
+		);
 		const data = await res.json();
 		console.log(data);
 
-		currentWeatherContainer.innerHTML = `${data[0].current
-			.toLocaleString("fa-IR")
-			.slice(0, 2)}°`;
+		currentWeatherContainer.innerHTML = `${Math.floor(
+			data[0].current
+		).toLocaleString("fa-IR")}°`;
 
 		currentWeatherIconContainer.innerHTML = `<img src="https://openweathermap.org/img/wn/${data[0].weather.icon}@2x.png"/>`;
 
@@ -23,12 +23,12 @@ const fetchWeather = async () => {
 
 		weatherDescriptionEmojiContainer.innerHTML = data[0].customDescription.emoji;
 
-		maxTempContainer.innerHTML = `${data[0].max
-			.toLocaleString("fa-IR")
-			.slice(0, 2)}°`;
-		minTempContainer.innerHTML = `${data[0].min
-			.toLocaleString("fa-IR")
-			.slice(0, 2)}°`;
+		maxTempContainer.innerHTML = `${Math.floor(data[0].max).toLocaleString(
+			"fa-IR"
+		)}°`;
+		minTempContainer.innerHTML = `${Math.floor(data[0].min).toLocaleString(
+			"fa-IR"
+		)}°`;
 	} catch (error) {
 		throw new Error(error);
 	}
