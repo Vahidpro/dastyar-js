@@ -25,15 +25,38 @@ li {
 .container {
 	display: grid;
 	grid-auto-flow: column;
-	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(8, 1fr);
 	gap: 0.5rem;
 	max-width: 1124px;
 	margin: 1rem auto;
+	grid-template-areas:
+		" todo todo search search search search left left"
+		" todo todo fav fav fav fav left left"
+		" todo todo fav fav fav fav left left"
+		" todo todo fav fav fav fav left left"
+		" todo todo fav fav fav fav left left"
+		" todo todo fav fav fav fav left left"
+		" todo todo fav fav fav fav left left"
+		" todo todo fav fav fav fav left left";
 }
 
 .todo-section {
 	height: 39.625rem;
 	border-radius: 1rem;
+	grid-area: todo;
+}
+
+.search-section {
+	grid-area: search;
+}
+
+.search-fav-section {
+	grid-area: fav;
+}
+
+.left-section {
+	grid-area: left;
 }
 
 @media screen and (max-width: 1160px) {
@@ -44,37 +67,21 @@ li {
 
 @media screen and (max-width: 880px) {
 	.container {
-		grid-auto-flow: row;
 		grid-template-columns: 1fr;
 		max-width: 32rem;
 		margin: 1rem auto;
-	}
-	.search-fav-section {
-		order: -1;
-	}
+		grid-template-areas:
+			"search"
+			"left"
+			"fav"
+			"todo";
 
-	.todo-section {
-		order: 1;
+		height: 1px;
 	}
 }
 
 @media screen and (max-width: 576px) {
 	.container {
-		grid-auto-flow: row;
-		grid-template-columns: 1fr;
 		margin: 1rem;
-	}
-	.search-fav-section {
-		order: -1;
-	}
-}
-
-@media screen and (max-width: 340px) {
-	.container {
-		grid-auto-flow: row;
-		grid-template-columns: 1fr;
-	}
-	.search-fav-section {
-		order: -1;
 	}
 }

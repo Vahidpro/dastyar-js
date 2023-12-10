@@ -144,7 +144,8 @@
 		height: auto;
 	}
 
-	.time-section {
+	.time-section,
+	.weather-section {
 		border-bottom: none;
 	}
 }

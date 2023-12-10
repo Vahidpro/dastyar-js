@@ -4,7 +4,6 @@
 .search-fav-section {
 	display: grid;
 	grid-auto-flow: row;
-	grid-template-rows: 1fr 7fr;
 }
 
 .search-section {
@@ -111,6 +110,10 @@
 	.search-fav-section {
 		display: flex;
 		flex-direction: column;
+	}
+
+	.fav-list-container {
+		grid-template-columns: repeat(2, 1fr);
 	}
 
 	.search-section {
