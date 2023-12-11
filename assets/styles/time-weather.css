@@ -4,6 +4,7 @@
 	display: flex;
 	flex-direction: row;
 	height: 60%;
+	overflow: hidden;
 }
 
 .time-section {
@@ -62,7 +63,7 @@
 	border-radius: 1rem;
 	border: 0.5px solid var(--grey-border);
 	margin: 0.2rem;
-	font-size: 0.7rem;
+	font-size: 0.6rem;
 	color: #637db3;
 	width: fit-content;
 }
@@ -100,7 +101,7 @@
 
 .temp-value {
 	color: #858f97;
-	font-size: 32px;
+	font-size: 2rem;
 	font-weight: 700;
 }
 .temp-title {
