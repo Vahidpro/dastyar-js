@@ -11,7 +11,15 @@ const fetchWeather = async () => {
 			"https://api.dastyar.io/express/weather?lat=35.67194277&lng=51.42434403&lang=fa&theme=light"
 		);
 		const data = await res.json();
+		return data;
+	} catch (error) {
+		throw new Error(error);
+	}
+};
 
+const displayWeather = async () => {
+	try {
+		const data = await fetchWeather();
 		currentWeatherContainer.innerHTML = `${Math.floor(
 			data[0].current
 		).toLocaleString("fa-IR")}°`;
@@ -32,4 +40,5 @@ const fetchWeather = async () => {
 		throw new Error(error);
 	}
 };
+displayWeather();
 fetchWeather();
