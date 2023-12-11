@@ -7,17 +7,20 @@
 	overflow: hidden;
 }
 
-.time-section {
+.time-section,
+.weather-section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	border-radius: 0 1rem 0 0;
-	border-left: 1px solid var(--grey-border-color);
 	border-bottom: 1px solid var(--grey-border-color);
 	width: 50%;
 }
 
+.time-section {
+	border-left: 1px solid var(--grey-border-color);
+}
 .time {
 	color: var(--blue-color);
 	font-size: 2rem;
@@ -42,11 +45,11 @@
 .islamic-date,
 .gregorian-date {
 	color: var(--blue-grey-color);
-	font-size: 0.6rem;
+	font-size: 0.5rem;
 	padding: 0.3rem;
 	text-align: center;
 	direction: ltr;
-	font-weight: bold;
+	font-weight: 800;
 }
 
 .islamic-date {
@@ -66,11 +69,6 @@
 	font-size: 0.6rem;
 	color: var(--indigo-color);
 	width: fit-content;
-}
-
-.weather-section {
-	border-bottom: 1px solid var(--grey-border-color);
-	width: 50%;
 }
 .weather-section .top {
 	display: flex;
@@ -95,7 +93,7 @@
 }
 .max-temp-value,
 .min-temp-value {
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 	font-weight: 800;
 }
 
@@ -105,13 +103,14 @@
 	font-weight: 700;
 }
 .temp-title {
-	font-size: 0.8rem;
-	font-weight: 300;
+	font-size: 0.7rem;
+	font-weight: 400;
 }
 
 .weather-icon img {
 	width: 48px;
 	height: 48px;
+	filter: drop-shadow(0 0 0.5rem var(--blue-color));
 }
 
 .description-title {
