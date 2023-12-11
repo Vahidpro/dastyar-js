@@ -23,8 +23,8 @@
 	justify-content: center;
 }
 .bookmark-list-container li div img {
-	width: 1.8rem;
-	height: 1.8rem;
+	width: 1.6rem;
+	height: 1.6rem;
 	cursor: pointer;
 }
 .bookmark-list-container .first-item div img {
@@ -32,7 +32,7 @@
 	height: 2.2rem;
 }
 .bookmark-list-container .bookmark-title {
-	font-size: 1em;
+	font-size: 0.9rem;
 	color: #4c51a7;
 }
 
