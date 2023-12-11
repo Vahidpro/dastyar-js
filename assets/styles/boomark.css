@@ -48,14 +48,13 @@
 	}
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 880px) {
 	.bookmark-list-container {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
 	.bookmark-list-container li a {
 		padding: 1rem 0;
-		gap: 1rem;
 	}
 
 	.bookmark-list-container .bookmark-title {

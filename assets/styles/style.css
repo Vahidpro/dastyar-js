@@ -117,15 +117,10 @@ li {
 
 @media screen and (max-width: 880px) {
 	.container {
+		grid-auto-flow: row;
 		grid-template-columns: 1fr;
-		max-width: 32rem;
-		margin: 1rem auto;
-		grid-template-areas:
-			"search"
-			"left-top"
-			"bm"
-			"todo";
-		height: 1px;
+		grid-template-rows: none;
+		grid-template-areas: " search" " left-top" " bm" " todo" " left-down";
 	}
 }
 

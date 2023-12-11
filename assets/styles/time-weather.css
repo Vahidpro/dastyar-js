@@ -59,12 +59,12 @@
 }
 
 .options > select {
-	border-radius: 16px;
+	border-radius: 1rem;
 	border: 0.5px solid var(--grey-border);
-	height: 1.5rem;
-	margin: 0.3rem;
+	margin: 0.2rem;
 	font-size: 0.7rem;
 	color: #637db3;
+	width: fit-content;
 }
 
 .weather-section {
@@ -131,7 +131,7 @@
 	font-size: 0.8rem;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 920px) {
 	.time-weather-section {
 		height: auto;
 	}
