@@ -25,7 +25,7 @@
 .todo-section .top .icon {
 	display: flex;
 	border-radius: 8px;
-	background: var(--grey-color);
+	background: var(--grey-color-color);
 	width: 32px;
 	height: 32px;
 	align-items: center;
@@ -37,7 +37,7 @@
 }
 
 hr {
-	border: 0.5px solid var(--grey-border);
+	border: 0.5px solid var(--grey-border-color);
 }
 
 .todo-section .tasks-list-container {
@@ -52,7 +52,7 @@ hr {
 	justify-content: space-between;
 	gap: 4px;
 	border-radius: 10px;
-	border: 0.5px solid #babdc6;
+	border: 0.5px solid var(--grey-border-color);
 	padding: 4px;
 	margin-bottom: 8px;
 }
@@ -102,7 +102,7 @@ hr {
 	align-items: center;
 	justify-content: space-between;
 	border-radius: 6px;
-	border: 2px solid #babdc6;
+	border: 2px solid var(--grey-border-color);
 	padding: 4px;
 	height: 40px;
 }
@@ -134,7 +134,7 @@ hr {
 }
 
 .new-task-form input::placeholder {
-	color: #94a3b8;
+	color: var(--light-grey-color);
 	text-align: right;
 	font-size: 1rem;
 	font-style: normal;

@@ -13,13 +13,13 @@
 	align-items: center;
 	justify-content: center;
 	border-radius: 0 1rem 0 0;
-	border-left: 1px solid var(--grey-border);
-	border-bottom: 1px solid var(--grey-border);
+	border-left: 1px solid var(--grey-border-color);
+	border-bottom: 1px solid var(--grey-border-color);
 	width: 50%;
 }
 
 .time {
-	color: #276ef7;
+	color: var(--blue-color);
 	font-size: 2rem;
 	font-weight: 800;
 }
@@ -36,12 +36,12 @@
 	justify-content: space-between;
 }
 .calendars .spacer {
-	color: #cccccc;
+	color: var(--light-grey-color);
 }
 
 .islamic-date,
 .gregorian-date {
-	color: #858f97;
+	color: var(--blue-grey-color);
 	font-size: 0.6rem;
 	padding: 0.3rem;
 	text-align: center;
@@ -61,15 +61,15 @@
 
 .options > select {
 	border-radius: 1rem;
-	border: 0.5px solid var(--grey-border);
+	border: 0.5px solid var(--grey-border-color);
 	margin: 0.2rem;
 	font-size: 0.6rem;
-	color: #637db3;
+	color: var(--indigo-color);
 	width: fit-content;
 }
 
 .weather-section {
-	border-bottom: 1px solid var(--grey-border);
+	border-bottom: 1px solid var(--grey-border-color);
 	width: 50%;
 }
 .weather-section .top {
@@ -90,7 +90,7 @@
 	align-items: center;
 	justify-content: space-around;
 	gap: 0.3rem;
-	color: #858f97;
+	color: var(--blue-grey-color);
 	margin: 0.3rem;
 }
 .max-temp-value,
@@ -100,7 +100,7 @@
 }
 
 .temp-value {
-	color: #858f97;
+	color: var(--blue-grey-color);
 	font-size: 2rem;
 	font-weight: 700;
 }

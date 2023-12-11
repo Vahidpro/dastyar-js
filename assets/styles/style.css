@@ -5,10 +5,15 @@
 	src: url(../fonts/Vazirmatn-VariableFont_wght.ttf);
 }
 :root {
+	--bg-color: #c4def7;
 	--primary-color: #ffffff;
 	--secondary-color: #000000;
 	--grey-color: #f3f4f6;
-	--grey-border: #f0f1f4;
+	--light-grey-color: #b2b2b2;
+	--blue-grey-color: #858f97;
+	--indigo-color: #3d518f;
+	--grey-border-color: #f0f1f4;
+	--blue-color: #276ef7;
 	--main-font: "Vazirmatn", sans-serif;
 	--outer-border-radius: 24px;
 	--mid-border-radius: 1rem;
@@ -23,7 +28,7 @@
 }
 
 body {
-	background-color: #c4def7;
+	background-color: var(--bg-color);
 	font-family: var(--main-font);
 }
 

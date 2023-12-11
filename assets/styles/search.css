@@ -27,13 +27,13 @@
 }
 
 .search-section input::placeholder {
-	color: #b2b2b2;
+	color: var(--light-grey-color);
 	font-size: 1rem;
 	font-weight: 500;
 }
 
 .search-section button {
-	background-color: #3d518f;
+	background-color: var(--indigo-color);
 	border: none;
 	border-radius: 6rem;
 	margin: 0.1rem;
