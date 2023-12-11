@@ -23,28 +23,29 @@
         </section>
     </header>
     <div class="container">
-        <section class="todo-section">
-            <div class="top">
+        <section class="todo-section d-flex">
+            <div class="top d-flex align-items-center">
                 <span class="todo-header">دست نویس</span>
-                <div class="icon"><img src="./assets/images/todo/bxs_hide.svg" alt="hide-icon"></div>
+                <div class="icon d-flex align-items-center justify-content-center"><img
+                        src="./assets/images/todo/bxs_hide.svg" alt="hide-icon"></div>
             </div>
             <hr>
-            <ul class="tasks-list-container">
+            <ul class="tasks-list-container d-flex">
             </ul>
             <hr>
             <div class="new-task">
-                <form action="submit" class="new-task-form">
+                <form action="submit" class="new-task-form d-flex align-items-center">
                     <input class="task-input" type="text" id="input" placeholder="نوشتن تسک جدید" required>
                     <button disabled class="btn-add"><img src="./assets/images/todo/plus.svg" alt="add icon"></button>
                 </form>
             </div>
         </section>
-        <section class="search-section">
-            <form class="search" type="submit">
+        <section class="search-section d-flex align-items-center justify-content-center">
+            <form class="search d-flex align-items-center" type="submit">
                 <img src="./assets/images/search/devicon_google.svg" alt="google icon">
                 <input type="text" placeholder="جستجو در گوگل">
-                <button type="submit"><img src="./assets/images/search/mingcute_search-line.svg"
-                        alt="search icon"></button>
+                <button class="d-flex justify-content-center align-items-center" type="submit"><img
+                        src="./assets/images/search/mingcute_search-line.svg" alt="search icon"></button>
             </form>
         </section>
         <section class="bookmarks-section">
@@ -128,16 +129,16 @@
             </ul>
         </section>
         <section class="left-top">
-            <section class="time-weather-section">
-                <div class="time-section">
+            <section class="time-weather-section d-flex">
+                <div class="time-section d-flex align-items-center justify-content-center">
                     <span class="time"></span>
                     <span class="persian-date"></span>
-                    <div class="calendars">
+                    <div class="calendars d-flex">
                         <span class="islamic-date"></span>
                         <span class="spacer">|</span>
                         <span class="gregorian-date"></span>
                     </div>
-                    <div class="options">
+                    <div class="options d-flex align-items-center justify-content-center">
                         <select name="timer" id="timer">
                             <option class="timer-option" value="1">تایمر</option>
                         </select>
@@ -146,16 +147,16 @@
                         </select>
                     </div>
                 </div>
-                <div class="weather-section">
-                    <div class="top">
+                <div class="weather-section d-flex align-items-center justify-content-center">
+                    <div class="top d-flex align-items-center justify-content-center">
                         <span class="temp-value"></span>
                         <div class="weather-icon d-flex align-items-center justify-content-center"></div>
                     </div>
-                    <div class="description">
+                    <div class="description d-flex align-items-center justify-content-center">
                         <span class="description-title"></span>
                         <span class="description-emoji"></span>
                     </div>
-                    <div class="max-min-temp">
+                    <div class="max-min-temp d-flex align-items-center">
                         <div class="max-temp">
                             <span class="max-temp-value"></span>
                             <span class="temp-title">حداکثر .</span>

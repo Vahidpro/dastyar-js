@@ -1,14 +1,6 @@
 @import "./style.css";
 
-.search-section {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
 .search-section form {
-	display: flex;
-	align-items: center;
 	justify-content: space-around;
 	background-color: var(--grey-color);
 	width: 90%;
@@ -38,9 +30,6 @@
 	border-radius: 6rem;
 	margin: 0.1rem;
 	cursor: pointer;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	padding: 0.3rem 0.8rem;
 }
 .search-section button img {

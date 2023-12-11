@@ -53,9 +53,9 @@ const createTask = (taskTitle, id) => {
 	li.innerHTML = `
         <div class="done"></div>
         <span class="task-title">${title}</span>
-        <div class="icons">
-            <div ><img class="btn-edit" src="./assets/images/todo/edit.svg" alt="edit-icon"></div>
-            <div ><img class="btn-delete" src="./assets/images/todo/delete.svg" alt="delete-icon"></div>
+        <div class="icons d-flex align-items-center justify-content-center ">
+            <div ><img class="btn-edit d-flex align-items-center justify-content-center" src="./assets/images/todo/edit.svg" alt="edit-icon"></div>
+            <div ><img class="btn-delete d-flex align-items-center justify-content-center" src="./assets/images/todo/delete.svg" alt="delete-icon"></div>
         </div>
     `;
 	tasksListContainer.prepend(li);

@@ -1,7 +1,6 @@
 @import "./style.css";
 
 .todo-section {
-	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
@@ -23,8 +22,6 @@
 }
 
 .todo-section .top {
-	display: flex;
-	align-items: center;
 	justify-content: space-between;
 }
 .todo-section .top .todo-header {
@@ -34,13 +31,10 @@
 	font-weight: bold;
 }
 .todo-section .top .icon {
-	display: flex;
 	border-radius: 8px;
 	background-color: var(--grey-color);
 	width: 32px;
 	height: 32px;
-	align-items: center;
-	justify-content: center;
 }
 .todo-section .top .icon img {
 	width: 20px;
@@ -52,7 +46,6 @@ hr {
 }
 
 .todo-section .tasks-list-container {
-	display: flex;
 	flex-direction: column;
 	flex: 1;
 	overflow: auto;
@@ -72,9 +65,6 @@ hr {
 	opacity: 1;
 }
 .task-item .icons {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	gap: 16px;
 	margin: 4px;
 	opacity: 0;
@@ -82,11 +72,6 @@ hr {
 }
 .task-item .icons div {
 	cursor: pointer;
-}
-.task-item .icons div {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 .icons div img {
@@ -114,8 +99,6 @@ hr {
 }
 
 .new-task-form {
-	display: flex;
-	align-items: center;
 	justify-content: space-between;
 	border-radius: 6px;
 	border: 2px solid var(--grey-border-color);
@@ -127,9 +110,6 @@ hr {
 	background: none;
 	border: none;
 	cursor: pointer;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 .new-task-form button img {
