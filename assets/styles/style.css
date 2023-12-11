@@ -41,6 +41,18 @@ li {
 	list-style: none;
 }
 
+.d-flex {
+	display: flex;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
 .no-gap {
 	gap: var(--no-gap);
 }

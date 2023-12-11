@@ -3,7 +3,7 @@
 .time-weather-section {
 	display: flex;
 	flex-direction: row;
-	height: 50%;
+	height: 60%;
 }
 
 .time-section {
@@ -20,7 +20,7 @@
 .time {
 	color: #276ef7;
 	font-size: 2rem;
-	font-weight: 700;
+	font-weight: 800;
 }
 
 .persian-date {
@@ -115,7 +115,7 @@
 
 .description-title {
 	color: var(--secondary-color);
-	font-size: 0.7rem;
+	font-size: 0.8rem;
 	font-weight: 800;
 }
 
@@ -127,9 +127,8 @@
 	gap: 0.2rem;
 	margin: 0 0.2rem;
 }
-.description img {
-	width: 20px;
-	height: 20px;
+.description-emoji {
+	font-size: 0.8rem;
 }
 
 @media screen and (max-width: 880px) {
