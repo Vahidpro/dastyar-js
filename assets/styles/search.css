@@ -21,7 +21,7 @@
 .search-section input::placeholder {
 	color: var(--light-grey-color);
 	font-size: 1rem;
-	font-weight: 500;
+	font-weight: 300;
 }
 
 .search-section button {

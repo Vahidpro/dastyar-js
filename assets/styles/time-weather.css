@@ -80,6 +80,12 @@
 	font-weight: 800;
 }
 
+.max-temp,
+.min-temp {
+	gap: 0.2rem;
+	flex-wrap: nowrap;
+}
+
 .temp-value {
 	color: var(--blue-grey-color);
 	font-size: 2rem;
@@ -98,7 +104,7 @@
 
 .description-title {
 	color: var(--secondary-color);
-	font-size: 0.8rem;
+	font-size: 0.7rem;
 	font-weight: 800;
 }
 
@@ -111,7 +117,7 @@
 	font-size: 0.8rem;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 880px) {
 	.time-weather-section {
 		height: auto;
 	}
@@ -119,5 +125,20 @@
 	.time-section,
 	.weather-section {
 		border-bottom: none;
+	}
+
+	.islamic-date,
+	.gregorian-date {
+		color: var(--blue-grey-color);
+		font-size: 0.7rem;
+	}
+
+	.max-temp-value,
+	.min-temp-value {
+		font-size: 1rem;
+	}
+
+	.temp-title {
+		font-size: 0.8rem;
 	}
 }
