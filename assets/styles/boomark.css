@@ -4,7 +4,7 @@
 	grid-template-columns: repeat(6, 1fr);
 	gap: 0.5em;
 }
-.bookmark-list-container li {
+.bookmark-list-container li a {
 	background-color: var(--primary-color);
 	display: flex;
 	flex-direction: column;
@@ -12,9 +12,9 @@
 	justify-content: center;
 	border-radius: 1rem;
 	height: 5.4rem;
-	gap: 0.7rem;
+	width: 100%;
 }
-.bookmark-list-container .first-item {
+.bookmark-list-container .first-item a {
 	gap: 0px;
 }
 .bookmark-list-container li div {
@@ -23,8 +23,8 @@
 	justify-content: center;
 }
 .bookmark-list-container li div img {
-	width: 1.6rem;
-	height: 1.6rem;
+	width: 1.8rem;
+	height: 1.8rem;
 	cursor: pointer;
 }
 .bookmark-list-container .first-item div img {

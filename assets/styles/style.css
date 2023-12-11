@@ -13,6 +13,7 @@
 	--outer-border-radius: 24px;
 	--mid-border-radius: 1rem;
 	--inner-border-radius: 0.5rem;
+	--no-gap: 0rem;
 }
 
 * {
@@ -32,8 +33,19 @@ input {
 	font-family: var(--main-font);
 }
 
+a {
+	text-decoration: none;
+}
+
 li {
 	list-style: none;
+}
+
+.no-gap {
+	gap: var(--no-gap);
+}
+.gap-1 {
+	gap: 0.5rem;
 }
 
 .container {
