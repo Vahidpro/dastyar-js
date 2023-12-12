@@ -1,7 +1,7 @@
-timeContainer = document.querySelector(".time");
-persianDateContainer = document.querySelector(".persian-date");
-gregorianDateContainer = document.querySelector(".gregorian-date");
-islamicDateContainer = document.querySelector(".islamic-date");
+const timeContainer = document.querySelector(".time");
+const persianDateContainer = document.querySelector(".persian-date");
+const gregorianDateContainer = document.querySelector(".gregorian-date");
+const islamicDateContainer = document.querySelector(".islamic-date");
 
 const today = new Date();
 
@@ -26,11 +26,11 @@ function setPersianDate() {
 	persianDateContainer.innerHTML = `${persianDate}`;
 }
 
-setPersianDate();
-setInterval(setPersianDate, 1000);
-
 setTime();
 setInterval(setTime, 1000);
+
+setPersianDate();
+// setInterval(setPersianDate, 1000);
 
 const gregorianDate = () => {
 	const day = today.getDate().toLocaleString("fa-IR");
@@ -44,7 +44,7 @@ const gregorianDate = () => {
 };
 
 gregorianDate();
-setInterval(gregorianDate, 1000);
+// setInterval(gregorianDate, 1000);
 
 const islamicDate = () => {
 	const day = today.toLocaleString("ar-SA", {
@@ -62,4 +62,4 @@ const islamicDate = () => {
 };
 
 islamicDate();
-setInterval(islamicDate, 1000);
+// setInterval(islamicDate, 1000);

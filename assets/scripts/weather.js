@@ -1,9 +1,11 @@
-currentWeatherContainer = document.querySelector(".temp-value");
-currentWeatherIconContainer = document.querySelector(".weather-icon");
-weatherDescriptionContainer = document.querySelector(".description-title");
-weatherDescriptionEmojiContainer = document.querySelector(".description-emoji");
-maxTempContainer = document.querySelector(".max-temp-value");
-minTempContainer = document.querySelector(".min-temp-value");
+const currentWeatherContainer = document.querySelector(".temp-value");
+const currentWeatherIconContainer = document.querySelector(".weather-icon");
+const weatherDescriptionContainer =
+	document.querySelector(".description-title");
+const weatherDescriptionEmojiContainer =
+	document.querySelector(".description-emoji");
+const maxTempContainer = document.querySelector(".max-temp-value");
+const minTempContainer = document.querySelector(".min-temp-value");
 
 const fetchWeather = async () => {
 	try {
@@ -41,4 +43,3 @@ const displayWeather = async () => {
 	}
 };
 displayWeather();
-fetchWeather();

@@ -1,6 +1,6 @@
-taskInput = document.querySelector(".task-input");
-addButton = document.querySelector(".btn-add");
-tasksListContainer = document.querySelector(".tasks-list-container");
+const taskInput = document.querySelector(".task-input");
+const addButton = document.querySelector(".btn-add");
+const tasksListContainer = document.querySelector(".tasks-list-container");
 
 let tasks = [];
 const maxTitleLength = 16;
