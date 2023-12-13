@@ -1,1 +1,1 @@
-### Dastyar Extension main page
+# Dastyar Extension main page
