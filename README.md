@@ -15,12 +15,10 @@ This is a JavaScript application that provides a main page for the Dastyar exten
 ## App Previews
 
 ### Main Page
-![Desktop Mode](![Screenshot 2024-05-05 084734](https://github.com/Vahidpro/dastyar-js/assets/43805831/cc6fc91d-68f1-4458-ac20-71d204299be1)
-)
+![Desktop Mode](https://github.com/Vahidpro/dastyar-js/assets/43805831/cc6fc91d-68f1-4458-ac20-71d204299be1)
 
 ### Todo List
-![Mobile Mode](![Screenshot 2024-05-05 084814](https://github.com/Vahidpro/dastyar-js/assets/43805831/a04d4a7f-c5d4-43a8-b32d-21192834d4ad)
-)
+![Mobile Mode](https://github.com/Vahidpro/dastyar-js/assets/43805831/a04d4a7f-c5d4-43a8-b32d-21192834d4ad)
 
 ## Features
 
